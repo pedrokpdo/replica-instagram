@@ -1,6 +1,7 @@
 import { AntDesign, Entypo, SimpleLineIcons } from "@expo/vector-icons";
+import { useNavigation } from "@react-navigation/native";
 import React from "react";
-import { Dimensions, Image, View } from "react-native";
+import { Dimensions, Image, TouchableOpacity, View } from "react-native";
 import { COLORS } from "../../colors";
 import { AvatarComponent } from "../funcionais/AvatarComponent";
 import { Row } from "../funcionais/RowComponent";
@@ -11,13 +12,16 @@ import { Title } from "../funcionais/TitleComponent";
 const { width } = Dimensions.get('window')
 
 export const PostComponent = ({ photo, name, post }) => {
+    const navigation = useNavigation<any>()
     return (
         <View style={{ marginTop: 16 }}>
             <Space>
-                <Row bottom={1} style={{ alignItems: 'center' }}>
-                    <AvatarComponent photo={photo} />
-                    <Title style={{ marginLeft: 8 }}>{name}</Title>
-                </Row>
+                <TouchableOpacity onPress={() => { navigation.navigate('ProfileScreen') }}>
+                    <Row bottom={1} style={{ alignItems: 'center' }}>
+                        <AvatarComponent photo={photo} />
+                        <Title style={{ marginLeft: 8 }}>{name}</Title>
+                    </Row>
+                </TouchableOpacity>
             </Space>
             <Image source={post} style={{ width: width, height: 300 }} />
             <Space top={1}>
