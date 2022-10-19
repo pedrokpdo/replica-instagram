@@ -16,7 +16,7 @@ export const PostComponent = ({ photo, name, post }) => {
             <Space>
                 <Row bottom={1} style={{ alignItems: 'center' }}>
                     <AvatarComponent photo={photo} />
-                    <Title>{name}</Title>
+                    <Title style={{ marginLeft: 8 }}>{name}</Title>
                 </Row>
             </Space>
             <Image source={post} style={{ width: width, height: 300 }} />

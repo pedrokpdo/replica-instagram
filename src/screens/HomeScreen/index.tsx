@@ -15,6 +15,8 @@ import perfil5 from '../../assets/perfil5.webp'
 //@ts-ignore
 import perfil6 from '../../assets/perfil6.webp'
 import { PostComponent } from "../../components/PostComponent";
+import { Title } from "../../components/funcionais/TitleComponent";
+import { ForYouComponent } from "../../components/ForYouComponent";
 
 export const HomeScreen = () => {
     return (
@@ -32,6 +34,15 @@ export const HomeScreen = () => {
                 </Row>
             </Space>
             <PostComponent name={'Pearl Jam'} photo={perfil4} post={perfil2} />
+            <PostComponent name={'Tri Jam'} photo={perfil2} post={perfil4} />
+            <Space top={2} bottom={2}>
+                <Title>Sujestões para você</Title>
+                <Row top={2}>
+                    <ForYouComponent photo={perfil6} name='Paulo'/>
+                    <ForYouComponent photo={perfil6} name='Paulo'/>
+                    <ForYouComponent photo={perfil6} name='Paulo'/>
+                </Row>
+            </Space>
         </ContainerComponent>
     )
 }
