@@ -1,12 +1,16 @@
 import React from "react";
 import { ContainerComponent } from "../../components/funcionais/ContainerComponent";
+import { Space } from "../../components/funcionais/SpaceComponent";
 import { Text } from "../../components/funcionais/TextComponent";
 import { Title } from "../../components/funcionais/TitleComponent";
+import { HeaderComponent } from "../../components/HeaderComponent";
 
 export const HomeScreen = () => {
     return (
         <ContainerComponent>
-            <Text>ola mundo</Text>
+            <Space top={2}>
+                <HeaderComponent />
+            </Space>
         </ContainerComponent>
     )
 }
