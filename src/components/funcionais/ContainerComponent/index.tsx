@@ -10,7 +10,7 @@ interface Props {
 
 export const ContainerComponent = ({ children, back }: Props) => {
     return (
-        <ScrollView style={{ flex: 1, backgroundColor: 'rgb(19, 18, 18)' }}>
+        <ScrollView style={{ flex: 1, backgroundColor: 'white' }}>
             {back ? (
                 <Space top={1}>
                     <Ionicons name="arrow-back" size={24} color={'white'} />
