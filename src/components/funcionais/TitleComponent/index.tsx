@@ -1,5 +1,6 @@
 import React from "react";
 import { Text } from "react-native";
+import { COLORS } from "../../../colors";
 
 interface Props {
     bold?: boolean;
@@ -11,6 +12,6 @@ interface Props {
 
 export const Title = ({ bold, children, style = {}, top=0, bottom=0 }: Props) => {
     return (
-        <Text style={{color: 'black' ,marginTop: 8 * top, marginBottom: 8 * bottom, fontWeight: bold ? 'bold' : '400', fontSize: 18, ...style }}>{children}</Text>
+        <Text style={{color: COLORS.text ,marginTop: 8 * top, marginBottom: 8 * bottom, fontWeight: bold ? 'bold' : '400', fontSize: 18, ...style }}>{children}</Text>
     )
 }
