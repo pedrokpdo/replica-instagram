@@ -12,12 +12,12 @@ export const MainHeaderComponent = () => {
         <Row style={{ alignItems: 'center', justifyContent: 'space-between' }}>
             <Row style={{ alignItems: 'center' }}>
                 <Image source={headerinsta} style={{ width: 100, height: 90, resizeMode: 'center' }} />
-                <AntDesign name="down" size={16} color={COLORS.text}/>
+                <AntDesign name="down" size={16} color={COLORS.text} />
             </Row>
             <Row style={{ alignItems: 'center' }}>
-                <Ionicons style={{ marginRight: 16 }} name="add" size={24} color={COLORS.text}/>
-                <AntDesign style={{ marginRight: 16 }} name="hearto" size={24} color={COLORS.text}/>
-                <AntDesign style={{ marginRight: 16 }} name="message1" size={24} color={COLORS.text}/>
+                <Ionicons style={{ marginRight: 16 }} name="add" size={24} color={COLORS.text} />
+                <AntDesign style={{ marginRight: 16 }} name="hearto" size={24} color={COLORS.text} />
+                <AntDesign style={{ marginRight: 0 }} name="message1" size={24} color={COLORS.text} />
             </Row>
         </Row>
     )
