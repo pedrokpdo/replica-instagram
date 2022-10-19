@@ -14,6 +14,8 @@ import { Text } from "../../components/funcionais/TextComponent";
 import { COLORS } from "../../colors";
 import { FullCard } from "../../components/funcionais/FullCard";
 import { AntDesign, Ionicons } from "@expo/vector-icons";
+import { StoryComponent } from "../../components/StoryComponent";
+import { PublicationListComponent } from "../../components/PublicationList";
 
 
 export const ProfileScreen = () => {
@@ -66,10 +68,19 @@ export const ProfileScreen = () => {
                         </Row>
                     </FullCard>
                     <FullCard style={{ backgroundColor: '#cfcfcf58', padding: 8 }}>
-                        <Ionicons name="person-add-outline" size={16} color={COLORS.text}/>
+                        <Ionicons name="person-add-outline" size={16} color={COLORS.text} />
                     </FullCard>
-                    
+
                 </Row>
+            </Space>
+            <Space top={4}>
+                <Row>
+                    <StoryComponent photo={perfil5} name='SHOP' />
+                    <StoryComponent photo={perfil5} name='GIGATON' />
+                </Row>
+            </Space>
+            <Space>
+                <PublicationListComponent />
             </Space>
         </ContainerComponent>
     )
