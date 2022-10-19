@@ -4,12 +4,13 @@ import { Space } from "../../components/funcionais/SpaceComponent";
 import { Text } from "../../components/funcionais/TextComponent";
 import { Title } from "../../components/funcionais/TitleComponent";
 import { HeaderComponent } from "../../components/HeaderComponent";
+import { MainHeaderComponent } from "../../components/MainHeaderComponent";
 
 export const HomeScreen = () => {
     return (
         <ContainerComponent>
-            <Space top={2}>
-                <HeaderComponent />
+            <Space top={-2}>
+                <MainHeaderComponent />
             </Space>
         </ContainerComponent>
     )
