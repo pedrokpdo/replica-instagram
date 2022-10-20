@@ -79,9 +79,9 @@ export const ProfileScreen = () => {
                     <StoryComponent photo={perfil5} name='GIGATON' />
                 </Row>
             </Space>
-            <Space>
+            <View style={{ marginTop: 16 }}>
                 <PublicationListComponent />
-            </Space>
+            </View>
         </ContainerComponent>
     )
 }
