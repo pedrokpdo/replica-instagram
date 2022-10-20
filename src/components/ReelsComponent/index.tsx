@@ -18,7 +18,7 @@ export const ReelsComponent = ({ photo, name, describe, message, music }) => {
                     <Title style={{ color: COLORS.text_inverted, fontSize: 24 }}>Reels</Title>
                     <AntDesign name="camerao" size={24} color={COLORS.text_inverted} />
                 </Row>
-                <View style={{ alignSelf: 'flex-end', marginTop: 100, alignItems: 'center' }}>
+                <View style={{ alignSelf: 'flex-end', marginTop: 100, alignItems: 'center', justifyContent: 'space-around', height: height / 2 }}>
                     <AntDesign style={{ marginTop: 24 }} name={'like1'} size={32} color={COLORS.text_inverted} />
                     <AntDesign style={{ marginTop: 24 }} name={'dislike1'} size={32} color={COLORS.text_inverted} />
                     <AntDesign style={{ marginTop: 24 }} name={'message1'} size={32} color={COLORS.text_inverted} />
