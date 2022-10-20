@@ -27,6 +27,8 @@ export const ReelsComponent = ({ photo, name, describe, message, music }) => {
                 </View>
             </Space>
             <Space>
+            </Space>
+            <View style={{ position: 'absolute', bottom: 0, margin: 16 }}>
                 <Row>
                     <AvatarComponent photo={photo} />
                     <Title style={{ color: COLORS.text_inverted }}>{name}</Title>
@@ -34,7 +36,7 @@ export const ReelsComponent = ({ photo, name, describe, message, music }) => {
                 <Text style={{ color: COLORS.text_inverted }}>{describe}</Text>
                 <Title top={1} style={{ color: COLORS.text_inverted }}>{message}</Title>
                 <Title top={1} style={{ color: COLORS.text_inverted }}>{music}</Title>
-            </Space>
+            </View>
         </ImageBackground>
     )
 }
