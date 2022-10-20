@@ -35,18 +35,18 @@ export const EditProfileScreen = () => {
             <Space top={2}>
                 <LabelComponent text={'Nome'} />
                 <Title>Pedro Henrique</Title>
+                <Divider top={1} bottom={1} />
             </Space>
-            <Divider top={1} bottom={1} />
             <Space>
                 <LabelComponent text={'Nome de usuário'} />
                 <Title>pedroh_telles</Title>
+                <Divider top={1} bottom={1} />
             </Space>
-            <Divider top={1} bottom={1} />
             <Space>
                 <LabelComponent text={'bio'} />
                 <Title>@paulx.reis :3</Title>
+                <Divider top={1} bottom={1} />
             </Space>
-            <Divider top={1} bottom={1} />
             <Space>
                 <Title>Adicionar link</Title>
             </Space>
