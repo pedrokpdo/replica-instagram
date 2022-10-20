@@ -35,7 +35,7 @@ export const HomeScreen = () => {
             </Space>
             <PostComponent name={'Pearl Jam'} photo={perfil4} post={perfil2} />
             <PostComponent name={'Tri Jam'} photo={perfil2} post={perfil4} />
-         {/*    <Space top={2} bottom={2}>
+            {/*    <Space top={2} bottom={2}>
                 <Title>Sujestões para você</Title>
                 <Row top={2}>
                     <ForYouComponent photo={perfil6} name='Paulo'/>
