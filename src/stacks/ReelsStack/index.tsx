@@ -1,16 +1,15 @@
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import React from "react";
-import { AddScreen } from "../../screens/AddScreen";
-import { HomeScreen } from "../../screens/HomeScreen";
-import { ProfileScreen } from "../../screens/ProfileScreen";
+import { ReelsScreen } from "../../screens/ReelsScreen";
+
 
 const { Navigator, Screen } = createNativeStackNavigator()
 
-export const AddStack = () => {
+export const ReelsStack = () => {
     return (
         <Navigator screenOptions={{ headerShown: false }}>
-            <Screen name="AddScreen" component={AddScreen} />
+            <Screen name="ReelsScreen" component={ReelsScreen} />
         </Navigator>
     )
 }

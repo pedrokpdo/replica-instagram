@@ -3,7 +3,7 @@ import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 import React from "react";
 import { COLORS } from "../../colors";
 import { AvatarComponent } from "../../components/funcionais/AvatarComponent";
-import { AddStack } from "../AddStack";
+import { ReelsStack } from "../ReelsStack";
 import { ExploreStack } from "../ExploreStack";
 import { HomeStack } from "../HomeStack";
 import { ProfileStack } from "../ProfileStack";
@@ -29,7 +29,7 @@ export const AppStack = () => {
                     <Ionicons style={{ marginBottom: -10 }} name="search" size={24} color={COLORS.text} />
                 )
             }} />
-            <Screen name="AddStack" component={AddStack} options={{
+            <Screen name="AddStack" component={ReelsStack} options={{
                 tabBarIcon: () => (
                     <Ionicons style={{ marginBottom: -10 }} name="play" size={24} color={COLORS.text} />
                 )
