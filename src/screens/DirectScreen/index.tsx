@@ -43,9 +43,9 @@ export const DirectScreen = () => {
                     <Title>Mensagens</Title>
                     <Title style={{ color: COLORS.link }}>Solicitações</Title>
                 </Row>
-                <DirectComponent photo={perfil2} time={'12min'} name='Maria Juana'/>
-                <DirectComponent photo={perfil3} time={'25min'} name='Antonia Dias'/>
-                <DirectComponent photo={perfil4} time={'1h'} name='Jurema Carvalho'/>
+                <DirectComponent photo={perfil2} time={'12min'} name='Maria Juana' />
+                <DirectComponent photo={perfil3} time={'25min'} name='Antonia Dias' />
+                <DirectComponent photo={perfil4} time={'1h'} name='Jurema Carvalho' />
             </Space>
         </ContainerComponent>
     )
