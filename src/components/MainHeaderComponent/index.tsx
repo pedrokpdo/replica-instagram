@@ -18,10 +18,12 @@ export const MainHeaderComponent = () => {
             </Row>
             <Row style={{ alignItems: 'center' }}>
                 <Ionicons style={{ marginRight: 16 }} name="add" size={24} color={COLORS.text} />
-                <TouchableOpacity onPress={() => {navigation.navigate('NotificationListScreen')}}>
+                <TouchableOpacity onPress={() => { navigation.navigate('NotificationListScreen') }}>
                     <AntDesign style={{ marginRight: 16 }} name="hearto" size={24} color={COLORS.text} />
                 </TouchableOpacity>
-                <AntDesign style={{ marginRight: 0 }} name="message1" size={24} color={COLORS.text} />
+                <TouchableOpacity onPress={() => { navigation.navigate('DirectScreen') }}>
+                    <AntDesign style={{ marginRight: 0 }} name="message1" size={24} color={COLORS.text} />
+                </TouchableOpacity>
             </Row>
         </Row>
     )

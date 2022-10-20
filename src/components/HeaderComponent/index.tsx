@@ -16,15 +16,14 @@ export const HeaderComponent = ({ me }: Props) => {
                 <Row style={{ alignItems: 'center', marginLeft: 16 }}>
                     <Title>pedroh_telles</Title>
                     {me ? (
-                        <AntDesign name="down" size={16} color={COLORS.text} />
+                        <AntDesign style={{ marginLeft: 4, marginTop: 4 }} name="down" size={16} color={COLORS.text} />
                     ) : null}
                 </Row>
             </Row>
-            <Row>
+            <Row style={{ alignItems: 'center' }}>
                 <Ionicons style={{ marginRight: 16 }} name="notifications-outline" size={24} color={COLORS.text} />
                 <Ionicons name="add" size={24} color={COLORS.text} />
             </Row>
-
         </Row>
     )
 }

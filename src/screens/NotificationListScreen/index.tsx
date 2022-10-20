@@ -3,20 +3,17 @@ import { ContainerComponent } from "../../components/funcionais/ContainerCompone
 import { Row } from "../../components/funcionais/RowComponent";
 import { Space } from "../../components/funcionais/SpaceComponent";
 import { Header } from "../../components/Header";
-//@ts-ignore
-import perfil2 from '../../assets/perfil2.jpg'
-//@ts-ignore
-import perfil3 from '../../assets/perfil3.jpg'
-//@ts-ignore
-import perfil4 from '../../assets/perfil4.jpg'
-//@ts-ignore
-import perfil5 from '../../assets/perfil5.webp'
-//@ts-ignore
-import perfil6 from '../../assets/perfil6.webp'
 import { Image, View } from "react-native";
 import { Title } from "../../components/funcionais/TitleComponent";
 import { Text } from "../../components/funcionais/TextComponent";
 import { NotificationComponent } from "../../components/NotificationComponent";
+//@ts-ignore
+import perfil2 from '../../assets/perfil2.jpg'
+//@ts-ignore
+import perfil3 from '../../assets/perfil3.jpg'
+
+
+
 
 export const NotificationListScreen = () => {
     return (
