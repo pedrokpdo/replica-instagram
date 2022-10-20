@@ -32,8 +32,8 @@ export const ReelsComponent = ({ photo, name, describe, message, music }) => {
                     <Title style={{ color: COLORS.text_inverted }}>{name}</Title>
                 </Row>
                 <Text style={{ color: COLORS.text_inverted }}>{describe}</Text>
-                <Title top={.5} style={{ color: COLORS.text_inverted }}>{message}</Title>
-                <Title top={.5} style={{ color: COLORS.text_inverted }}>{music}</Title>
+                <Title top={1} style={{ color: COLORS.text_inverted }}>{message}</Title>
+                <Title top={1} style={{ color: COLORS.text_inverted }}>{music}</Title>
             </Space>
         </ImageBackground>
     )
