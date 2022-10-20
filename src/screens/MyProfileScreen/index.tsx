@@ -8,7 +8,7 @@ import perfil5 from '../../assets/perfil5.webp'
 //@ts-ignore
 import perfil6 from '../../assets/perfil6.webp'
 import { Row } from "../../components/funcionais/RowComponent";
-import { View } from "react-native";
+import { TouchableOpacity, View } from "react-native";
 import { Title } from "../../components/funcionais/TitleComponent";
 import { Text } from "../../components/funcionais/TextComponent";
 import { COLORS } from "../../colors";
@@ -17,9 +17,11 @@ import { AntDesign, Ionicons } from "@expo/vector-icons";
 import { StoryComponent } from "../../components/StoryComponent";
 import { PublicationListComponent } from "../../components/PublicationList";
 import { FindPersonComponent } from "../../components/FindPersonComponent";
+import { useNavigation } from "@react-navigation/native";
 
 
 export const MyProfileScreen = () => {
+    const navigation = useNavigation<any>()
     return (
         <ContainerComponent>
             <Space top={2}>
@@ -52,9 +54,11 @@ export const MyProfileScreen = () => {
                 </Row>
             </Space>
             <Space top={4}>
-                <FullCard style={{ backgroundColor: '#d1d1d13b', padding: 4, alignItems: 'center' }}>
-                    <Title>Editar perfil</Title>
-                </FullCard>
+                <TouchableOpacity onPress={() => { navigation.navigate('EditProfileScreen') }}>
+                    <FullCard style={{ backgroundColor: '#d1d1d13b', padding: 4, alignItems: 'center' }}>
+                        <Title>Editar perfil</Title>
+                    </FullCard>
+                </TouchableOpacity>
             </Space>
             <Space top={2}>
                 <Row style={{ justifyContent: 'space-between' }}>
