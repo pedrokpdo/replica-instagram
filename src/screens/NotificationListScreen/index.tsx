@@ -35,7 +35,15 @@ export const NotificationListScreen = () => {
             </Space>
             <Space top={2}>
                 <Title>Novo</Title>
-                <NotificationComponent follow={true} top={1} bottom={1} photo={perfil2} name={'Maria Antonieta'} text={'Ateliar e pearl jam recentemente compartilharam novos videos do Reels.'} time='18h'/>
+                <NotificationComponent post={perfil2} top={1} bottom={1} photo={perfil3} name={'Maria Antonieta'} text={'Ateliar e pearl jam recentemente compartilharam novos videos do Reels.'} time='18h' />
+                <NotificationComponent post={perfil3} top={1} bottom={1} photo={perfil2} name={'Maria Antonieta'} text={'Ateliar e pearl jam recentemente compartilharam novos videos do Reels.'} time='18h' />
+                <NotificationComponent top={1} bottom={1} photo={perfil2} name={'Maria'} text={'Começou a seguir você.'} time='18h' />
+            </Space>
+            <Space top={2}>
+                <Title>Ontem</Title>
+                <NotificationComponent post={perfil2} top={1} bottom={1} photo={perfil3} name={'Maria Antonieta'} text={'Ateliar e pearl jam recentemente compartilharam novos videos do Reels.'} time='18h' />
+                <NotificationComponent post={perfil3} top={1} bottom={1} photo={perfil2} name={'Maria Antonieta'} text={'Ateliar e pearl jam recentemente compartilharam novos videos do Reels.'} time='18h' />
+                <NotificationComponent top={1} bottom={1} photo={perfil2} name={'Maria'} text={'Começou a seguir você.'} time='18h' />
             </Space>
         </ContainerComponent>
     )
