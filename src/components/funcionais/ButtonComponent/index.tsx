@@ -15,7 +15,7 @@ interface Props {
 export const Button = ({ title, onPress, color = 'black', backgroundColor = 'white', top, bottom }: Props) => {
     return (
         <Row top={top} bottom={bottom}>
-            <TouchableOpacity onPress={onPress} style={{ backgroundColor: backgroundColor, paddingVertical: 6, paddingHorizontal: 32, borderRadius: 16 }}>
+            <TouchableOpacity onPress={onPress} style={{ backgroundColor: backgroundColor, paddingVertical: 6, paddingHorizontal: 40, borderRadius: 8 }}>
                 <Title style={{ color: color }}>{title}</Title>
             </TouchableOpacity>
         </Row>

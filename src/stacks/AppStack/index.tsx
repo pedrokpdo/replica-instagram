@@ -10,7 +10,7 @@ import { ProfileStack } from "../ProfileStack";
 import { ShoppingStack } from "../ShoppingStack";
 //@ts-ignore
 import perfil2 from '../../assets/perfil2.jpg'
-import { View } from "react-native";
+import { Image, View } from "react-native";
 
 
 
@@ -42,7 +42,7 @@ export const AppStack = () => {
             <Screen name="ProfileStack" component={ProfileStack} options={{
                 tabBarIcon: () => (
                     <View style={{ marginBottom: -10 }}>
-                        <AvatarComponent photo={perfil2} />
+                        <Image style={{ width: 40, height: 40, borderRadius: 999 }} source={perfil2} />
                     </View>
                 )
             }} />
